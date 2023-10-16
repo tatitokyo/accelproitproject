@@ -1,10 +1,17 @@
-import { Routers, Route, Link } from 'react-router-dom';
-import { register } from './pages/register';
+import React from 'react'
+import { Route, Routes } from 'react-router-dom';
+import LoginPage from '../pages/login';
+import RegisterPage from '../pages/register';
 
-const App = () => <div className="App">
-    <Router>
-        <div>
-            <Route exact path="/register" Component={<register/>} />
+function App() {
+    return (
+        <div className="App">
+            <Routes>
+                <Route path="login" element={<LoginPage />} />
+                <Route path="register" element={<RegisterPage />} />
+            </Routes>
         </div>
-    </Router>
-    </div>
+    );
+}
+
+export default App;
