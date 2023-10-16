@@ -11,7 +11,7 @@ export const MainSection = () => {
     <section className="w-full flex-col md:flex-row flex mt-6 h-screen justify-between">
       <div className="relative order-2 md:order-1 text-center md:text-left md:w-3/4 mt-12 xl:mt-60">
         <h1 className="text-3xl md:text-8xl xl:text-20xl font-bold md:whitespace-pre-line mt-0.2">{`ALL\n the LOVE`}</h1>
-        <p className="text-medium-gray text-lg my-12 whitespace-pre-line">{`Your pet deserves!\n Join us, i don't know what else i can say\n For example, Ayan Pahomov, zatsenite, please, thank you!`}</p>
+        <p className="text-medium-gray text-lg my-12 whitespace-pre-line">{`Your pet deserves!\n This is a prototype of our website\n Thank you for your atention!`}</p>
         <Button isFilled={true}>Learn More</Button>
         <div className="flex justify-around xl:absolute xl:bottom-1 w-full mt-20">
           <Databiz />
