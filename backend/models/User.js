@@ -1,5 +1,7 @@
 import mongoose from 'mongoose';
 
+//требования к данным для регистрации
+
 const UserSchema = new mongoose.Schema(
     {
         fullName: {
