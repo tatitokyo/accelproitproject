@@ -14,18 +14,18 @@ export const Header = () => {
     <header className='flex items-center'>
         <LogoIcon />
         <nav className='hidden md:flex space-x-6 ml-8 items-center'>
-          <NavItem text='Feature'>
+          <NavItem text='Преимущества'>
             <NavMenu items={ FEATURES }/>
           </NavItem>
-          <NavItem text='Company'>
+          <NavItem text='Услуги'>
             <NavMenu items={ COMPANY }/>
           </NavItem>
-          <NavItem text='Careers'/>
-          <NavItem text='About'/>
+          <NavItem text='Новости'/>
+          <NavItem text='О нас'/>
         </nav>
         <div className="hidden ml-auto md:flex space-x-5">
-          <Button> Login </Button>
-          <Button hasBorder={ true }> Register </Button>
+          <Button> Вход </Button>
+          <Button hasBorder={ true }> Регистрация </Button>
           </div>
           <div
             className="flex md:hidden ml-auto cursor-pointer z-30"
