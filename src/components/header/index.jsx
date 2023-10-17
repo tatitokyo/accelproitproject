@@ -7,6 +7,7 @@ import { NavMenu } from '../nav-menu';
 import { COMPANY, FEATURES } from './constants';
 import { Button } from '../button';
 import { MobileMenu } from '../mobile-menu';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -24,9 +25,13 @@ export const Header = () => {
           <NavItem text='О нас'/>
         </nav>
         <div className="hidden ml-auto md:flex space-x-5">
-          <Button> Вход </Button>
-          <Button hasBorder={ true }> Регистрация </Button>
-          </div>
+          <Link to="/login">
+            <Button> Вход </Button>
+          </Link>
+          <Link to="/register">
+            <Button hasBorder={ true } > Регистрация </Button>
+          </Link>
+        </div>
           <div
             className="flex md:hidden ml-auto cursor-pointer z-30"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

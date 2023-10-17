@@ -2,7 +2,7 @@ import { Header } from "./components/header";
 import { MainSection } from "./components/main-section/main-section";
 import { Wrapper } from "./components/wrapper";
 import { Route, Routes } from "react-router-dom";
-import PagesRootComponent from "./pages";
+import PagesRootComponent from "./pages/index";
 
 function App() {
   return (
