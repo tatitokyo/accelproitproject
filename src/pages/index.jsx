@@ -8,7 +8,7 @@ const PagesRootComponent = () => {
     const location = useLocation()
 
     return(
-        <div className='display: flex, justify-content: center, align-items: center, width: 100vw, height: 100vh'>
+        <div className='root'>
             <div className="form">
                 <Box
                     display='flex'

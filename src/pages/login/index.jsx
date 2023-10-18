@@ -9,7 +9,7 @@ const LoginPage = () => {
             <TextField fullWidth={true} margin='normal' label='Email' variant='outlined' placeholder='Введите ваш email' />
             <TextField type="password" fullWidth={true} margin='normal' label='Password' variant='outlined' placeholder='Введите ваш пароль' />
             <Button sx={{fontFamily:'Popins', marginTop: 2, marginBottom: 2, width: '20%' }} variant='contained'>Войти</Button>
-            <Typography variant="body1" sx={{fontFamily: 'Popins', }}>У вас нет аккаунта?<span className='color: #1900D5, margin-left: 10px, cursor: pointer '>Регистрация</span></Typography>
+            <Typography variant="body1" sx={{fontFamily: 'Popins', }}>У вас нет аккаунта?<span className='incitingText'>Регистрация</span></Typography>
         </>
     );
 };
