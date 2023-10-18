@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+    <input type="text" name="username">Введите ник
+    <br>
+    <input type="password" name="pswd">Введите пароль
+    <br>
+    <input type="text" name="pswd2">Введите пароль повторно
+    <br>
+    <input type="phone" name="phone"> Введите телефон
+    {% csrf_token %}
+</form> 
+{% endblock %}

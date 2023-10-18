@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+    <input type="text" name="lgn">Введите логин
+    <br>
+    <input type="password" name="pswd">Введите пароль
+    {% csrf_token %}
+</form> 
+{% endblock %}
